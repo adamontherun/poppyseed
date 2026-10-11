@@ -79,7 +79,7 @@ Every rule is proved end to end first: the conformance check runs in-process (`p
 
 ## Design rules
 
-Changes to `packages/core` (including `poppyseed/next` in `src/next/`) follow the design rules in the repo's CLAUDE.md: subtract before adding, deep modules, invalid states unrepresentable (discriminated unions; the store's expiry carries lifecycle), validate at boundaries then trust the types (no `as`/`!` hiding a loose type), a composable public API, Web APIs in core.
+Changes to `packages/core` (including `poppyseed/next` in `src/next/`) follow the design rules in the repo's AGENTS.md: subtract before adding, deep modules, invalid states unrepresentable (discriminated unions; the store's expiry carries lifecycle), validate at boundaries then trust the types (no `as`/`!` hiding a loose type), a composable public API, Web APIs in core.
 
 ## Feature map
 
