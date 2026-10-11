@@ -10,6 +10,7 @@ import { Marked } from "marked";
 import { highlight } from "./highlight";
 
 export const REPO = "https://github.com/akshay5995/poppyseed";
+export const SITE = "https://withpoppyseed.dev";
 
 type Page = { slug: string; title: string; blurb: string } & ({ kind: "doc" } | { kind: "link"; href: string });
 
@@ -51,7 +52,8 @@ export const hrefOf = (page: Page) => (page.kind === "doc" ? `/docs/${page.slug}
 
 // Next.js runs from site/ in development and when building, which is when these are read.
 const docsDir = join(process.cwd(), "..", "docs");
-const source = (slug: string) => readFileSync(join(docsDir, `${slug}.md`), "utf8").replace(/^# .*\n/, "");
+/** A doc's markdown, without its H1. */
+export const source = (slug: string) => readFileSync(join(docsDir, `${slug}.md`), "utf8").replace(/^# .*\n/, "");
 
 const slugify = (text: string) =>
 	text

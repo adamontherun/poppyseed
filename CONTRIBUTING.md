@@ -13,4 +13,4 @@ Node 22 and pnpm 10. CI runs all of these and the quickstart on every pull reque
 - Never skip, weaken or delete a check to get green.
 - Keep changes small: subtract before you add.
 
-[CLAUDE.md](CLAUDE.md) has the full project rules; they apply to people and coding agents alike.
+[AGENTS.md](AGENTS.md) has the full project rules; they apply to people and coding agents alike.
